@@ -3482,12 +3482,13 @@ bool PlayerbotAI::AllowActivity(ActivityType activityType, bool checkNow)
 
 bool PlayerbotAI::IsOpposing(Player* player)
 {
-    return IsOpposing(player->getRace(), bot->getRace());
+    return false;
 }
 
 bool PlayerbotAI::IsOpposing(uint8 race1, uint8 race2)
 {
-    return (IsAlliance(race1) && !IsAlliance(race2)) || (!IsAlliance(race1) && IsAlliance(race2));
+    return false;
+    //return (IsAlliance(race1) && !IsAlliance(race2)) || (!IsAlliance(race1) && IsAlliance(race2));
 }
 
 void PlayerbotAI::RemoveShapeshift()
