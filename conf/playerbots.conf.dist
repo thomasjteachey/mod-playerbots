@@ -19,7 +19,7 @@ AiPlayerbot.BotAutologin = 0
 
 # Allow login other players' characters as bots
 # Default: 0 (disabled)
-AiPlayerbot.AllowPlayerBots = 0
+AiPlayerbot.AllowPlayerBots = 1
 
 # Guild Task system
 AiPlayerbot.EnableGuildTasks = 0
@@ -31,13 +31,13 @@ AiPlayerbot.RandomBotJoinLfg = 1
 AiPlayerbot.RandomBotSuggestDungeons = 1
 
 # Enable dungeon suggestions in lower case randomly
-AiPlayerbot.SuggestDungeonsInLowerCaseRandomly = 0
+AiPlayerbot.SuggestDungeonsInLowerCaseRandomly = 1
 
 # Enable BG/Arena for random Bots
 AiPlayerbot.RandomBotJoinBG = 1
 
 # Enable Auto join BG - bots randomly join WSG and 2v2 Arena if server is not lagging
-AiPlayerbot.RandomBotAutoJoinBG = 0
+AiPlayerbot.RandomBotAutoJoinBG = 1
 
 # Mark many quests <= Bot level as complete (slows down bot creation)
 AiPlayerbot.PreQuests = 0
@@ -76,7 +76,7 @@ AiPlayerbot.DeleteRandomBotArenaTeams = 0
 AiPlayerbot.RandomGearLoweringChance = 0
 
 # Chance random bot has max level on first randomize (default 0.15)
-AiPlayerbot.RandomBotMaxLevelChance = 0.15
+AiPlayerbot.RandomBotMaxLevelChance = 1
 
 # Chance bot chooses RPG (Teleport to random camp for their level) instead of grinding
 AiPlayerbot.RandomBotRpgChance = 0.20 #unused now
@@ -85,24 +85,24 @@ AiPlayerbot.RandomBotRpgChance = 0.20 #unused now
 AiPlayerbot.RandombotsWalkingRPG = 0
 
 # Set randombots movement speed to walking only inside buildings
-AiPlayerbot.RandombotsWalkingRPG.InDoors = 0
+AiPlayerbot.RandombotsWalkingRPG.InDoors = 1
 
 # Bots greet to the players
-AiPlayerbot.EnableGreet = 0
+AiPlayerbot.EnableGreet = 1
 
 # Bots will be summoned to player when accept group invitation
 AiPlayerbot.SummonWhenGroup = 1
 
 # Show helmet and cloak on randombots (reset required)
-AiPlayerbot.RandomBotShowHelmet = 1
+AiPlayerbot.RandomBotShowHelmet = 0
 AiPlayerbot.RandomBotShowCloak = 1
 
 # Disable random levels for randombots
 # Every bots started on the specified level and level up by killing mobs.
-AiPlayerbot.DisableRandomLevels = 0
+AiPlayerbot.DisableRandomLevels = 1
 
 # Set randombots starting level here if "AiPlayerbot.DisableRandomLevels" enabled
-AiPlayerbot.RandombotStartingLevel = 5
+AiPlayerbot.RandombotStartingLevel = 60
 
 # Set kill XP rate for bots (default: 1)
 # Server XP Rate * AiPlayerbot.KillXPRate
@@ -141,7 +141,7 @@ AiPlayerbot.DowngradeMaxLevelBot = 0
 AiPlayerbot.EquipmentPersistence = 0
 
 # default: 80
-AiPlayerbot.EquipmentPersistenceLevel = 80
+AiPlayerbot.EquipmentPersistenceLevel = 60
 
 # Bot group invitation permission level (0 = GM only, 1 = accept based on level, 2 = always accept)
 # default: 1 (accept based on level)
@@ -223,7 +223,7 @@ AiPlayerbot.AutoTrainSpells = yes
 # Bots automatically learn classquest reward spells on levelup
 # Only for random bots
 # Default: 0 (disabled)
-AiPlayerbot.AutoLearnQuestSpells = 0
+AiPlayerbot.AutoLearnQuestSpells = 1
 
 # Bots automatically learn trainable spells on levelup
 # Only for random bots
@@ -471,7 +471,7 @@ AiPlayerbot.DiffEmpty = 200
 #                                                                           Unix/Linux)
 #        Default:     "127.0.0.1;3306;acore;acore;acore_playerbots"       - (PlayerbotDatabaseInfo)
 
-PlayerbotsDatabaseInfo = "127.0.0.1;3306;acore;acore;acore_playerbots"
+PlayerbotsDatabaseInfo = "138.197.110.226;3306;acore;acore;townsendplayerbots"
 
 #
 #    PlayerbotsDatabase.WorkerThreads

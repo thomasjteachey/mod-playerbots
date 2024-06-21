@@ -183,8 +183,10 @@ bool PlayerbotSecurity::CheckLevelFor(PlayerbotSecurityLevel level, bool silent,
 
     PlayerbotAI* botAI = GET_PLAYERBOT_AI(bot);
     Player* master = botAI->GetMaster();
+    /*
     if (master && botAI && botAI->IsOpposing(master) && master->GetSession()->GetSecurity() < SEC_GAMEMASTER)
         return false;
+        */
 
     std::ostringstream out;
     switch (realLevel)
