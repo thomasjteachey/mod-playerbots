@@ -4587,11 +4587,11 @@ uint32 PlayerbotAI::AutoScaleActivity(uint32 mod)
     return static_cast<uint32>(mod * (1 - lagProgress));
 }
 
-bool PlayerbotAI::IsOpposing(Player* player) { return IsOpposing(player->getRace(), bot->getRace()); }
+bool PlayerbotAI::IsOpposing(Player* player) { return false; }
 
 bool PlayerbotAI::IsOpposing(uint8 race1, uint8 race2)
 {
-    return (IsAlliance(race1) && !IsAlliance(race2)) || (!IsAlliance(race1) && IsAlliance(race2));
+    return false;
 }
 
 void PlayerbotAI::RemoveShapeshift()
